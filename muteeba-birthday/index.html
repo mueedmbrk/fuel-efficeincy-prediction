@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Muteeba 🎂</title>
+  <meta name="description" content="A birthday surprise for Muteeba, with love from Mueed." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════ Intro Overlay ══════════ -->
+  <div class="intro" id="intro">
+    <div class="intro-inner">
+      <div class="gift" id="gift">
+        <div class="gift-lid"></div>
+        <div class="gift-box"></div>
+        <div class="gift-glow"></div>
+      </div>
+      <h2 class="intro-title">A little surprise awaits you…</h2>
+      <p class="intro-sub">Made specially for someone special</p>
+      <button class="btn-open" id="btnOpen">Tap to Open ✨</button>
+    </div>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Floating decorations -->
+  <div class="floaters" aria-hidden="true">
+    <span class="balloon b1">🎈</span>
+    <span class="balloon b2">🎈</span>
+    <span class="balloon b3">🎈</span>
+    <span class="balloon b4">🎈</span>
+    <span class="heart h1">❤️</span>
+    <span class="heart h2">🩷</span>
+    <span class="heart h3">💛</span>
+    <span class="spark s1">✨</span>
+    <span class="spark s2">✨</span>
+    <span class="spark s3">🌟</span>
+  </div>
+
+  <!-- ══════════ Hero ══════════ -->
+  <header class="hero">
+    <p class="hero-eyebrow reveal">It's your special day</p>
+    <h1 class="hero-script reveal">Happy Birthday</h1>
+    <h2 class="hero-name reveal">Muteeba</h2>
+    <div class="hero-divider reveal"><span>❀</span></div>
+    <p class="hero-sub reveal">May your day sparkle with joy, laughter and everything beautiful —<br class="only-desktop" /> just like you.</p>
+    <p class="hero-from reveal">with all my love, <span>Mueed</span> 💝</p>
+    <a href="#cake" class="hero-scroll reveal">↓ scroll for your surprise</a>
+  </header>
+
+  <!-- ══════════ Cake ══════════ -->
+  <section class="section cake-section" id="cake">
+    <p class="section-eyebrow reveal">Make a wish</p>
+    <h2 class="section-title reveal">Blow Out the Candles!</h2>
+    <div class="cake-wrap reveal">
+      <div class="cake" id="cakeEl" role="button" tabindex="0" aria-label="Tap to blow out the candles">
+        <div class="candles">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+        <div class="layer layer-top"></div>
+        <div class="layer layer-mid"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="plate"></div>
+      </div>
+      <p class="cake-hint" id="cakeHint">Tap the cake to blow out the candles 🕯️</p>
+      <p class="cake-wish" id="cakeWish">🎉 Yayy! May every single wish of yours come true, Muteeba! 🎉</p>
+    </div>
+  </section>
+
+  <!-- ══════════ Gallery ══════════ -->
+  <section class="section gallery-section">
+    <p class="section-eyebrow reveal">Beautiful memories</p>
+    <h2 class="section-title reveal">Simply Gorgeous, Always</h2>
+    <p class="section-sub reveal">Every picture of you is a favourite of mine.</p>
+    <div class="gallery">
+      <figure class="polaroid reveal" style="--tilt:-3deg">
+        <img src="photos/photo1.jpeg" alt="Muteeba smiling in a beautiful scarf" loading="lazy" />
+        <figcaption>That smile 🤍</figcaption>
+      </figure>
+      <figure class="polaroid reveal" style="--tilt:2.5deg">
+        <img src="photos/photo2.jpeg" alt="Muteeba looking graceful" loading="lazy" />
+        <figcaption>Pure grace ✨</figcaption>
+      </figure>
+      <figure class="polaroid reveal" style="--tilt:-2deg">
+        <img src="photos/photo3.jpeg" alt="Muteeba in a lovely red dress" loading="lazy" />
+        <figcaption>Red suits you ❤️</figcaption>
+      </figure>
+      <figure class="polaroid reveal" style="--tilt:3deg">
+        <img src="photos/photo4.jpeg" alt="A stunning portrait of Muteeba" loading="lazy" />
+        <figcaption>Stunning 😍</figcaption>
+      </figure>
+      <figure class="polaroid reveal wide" style="--tilt:-1.5deg">
+        <img src="photos/photo5.png" alt="Muteeba and Mueed together" loading="lazy" />
+        <figcaption>Us, always 💑</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ══════════ Wishes ══════════ -->
+  <section class="section wishes-section">
+    <p class="section-eyebrow reveal">From my heart</p>
+    <h2 class="section-title reveal">Wishes for You</h2>
+    <div class="wishes">
+      <article class="wish-card reveal">
+        <div class="wish-icon">🌸</div>
+        <h3>To Your Happiness</h3>
+        <p>May every morning bring you a reason to smile, and every night end with a grateful heart. You deserve nothing but the purest happiness, Muteeba.</p>
+      </article>
+      <article class="wish-card reveal">
+        <div class="wish-icon">🌙</div>
+        <h3>To Your Dreams</h3>
+        <p>May this year carry you closer to everything you've ever dreamed of. Keep shining — the world looks better with your light in it.</p>
+      </article>
+      <article class="wish-card reveal">
+        <div class="wish-icon">🕊️</div>
+        <h3>To Your Peace</h3>
+        <p>May Allah bless you with health, peace and endless barakah. May your heart always be as beautiful and calm as your smile.</p>
+      </article>
+      <article class="wish-card reveal">
+        <div class="wish-icon">💞</div>
+        <h3>To Us</h3>
+        <p>Thank you for being you — my favourite person, my calm and my joy. Here's to many more birthdays celebrated together.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ Letter ══════════ -->
+  <section class="section letter-section">
+    <div class="letter reveal">
+      <div class="letter-seal">💌</div>
+      <h2 class="letter-title">Dearest Muteeba,</h2>
+      <p>On your special day, I just want you to know how much you mean to me. Your kindness, your laugh, the way you light up every room — everything about you is a blessing I never take for granted.</p>
+      <p>I hope this little corner of the internet, made just for you, brings a smile to your face the way you bring one to mine every single day.</p>
+      <p>Happiest of birthdays, meri jaan. May this year be your best one yet. 🎂✨</p>
+      <p class="letter-sign">Forever yours,<br /><span>Mueed</span></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with ❤️ by <strong>Mueed</strong> — for <strong>Muteeba</strong></p>
+    <p class="footer-year">🎂 Happy Birthday 🎂</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
